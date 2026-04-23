@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Side</title>
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= INTRO ================= -->
+    <section class="intro">
+      <video id="introVideo" muted playsinline>
+        <source
+          src="./assets/video/video_2026-02-10_23-58-07.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <button id="playVideoBtn">Explore Now</button>
+    </section>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- Left (Mobile: cart) -->
+        <div class="left-icons">
+          <div class="cart">
+            <img src="./assets/img/shopping-bag (1).png" alt="cart" />
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+
+        <!-- Logo (center on mobile) -->
+        <div class="logo">
+          <img src="./assets/img/Logo 1.png" alt="logo" />
+        </div>
+
+        <!-- Right icons -->
+        <div class="right-icons">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <i class="fa-solid fa-bars icon" id="menuToggle"></i>
+        </div>
+      </div>
+
+      <!-- Nav Links --> 
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- ================= DESKTOP NAVBAR ================= -->
+    <header class="desktop-navbar">
+      <!-- Logo Left -->
+      <div class="desktop-logo">
+        <img src="./assets/img/Logo 1.png" alt="logo" />
+      </div>
+
+      <!-- Links Center -->
+      <ul class="desktop-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul> 
+    <section class="video-section">
+      <video autoplay muted loop playsinline>
+        <source
+          src="./assets/video/ttttttttttttttttttttt_3_2.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <section class="site" id="site">
+      <div class="product-card">
+        <div class="img-wrapper">
+          <img
+            src="./assets/img/Black_Hoodie_Against_Light_Background-removebg-preview.png"
+            alt="product"
+          />
+        </div>
+
+        <div class="line"></div>
+
+        <h3 class="title">Black Street T-Shirt</h3>
+
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <p class="price">$49.99</p>
+
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="img-wrapper">
+          <img
+            src="./assets/img/White_Hoodie_on_Neutral_Background-removebg-preview.png"
+            alt="product"
+          />
+        </div>
+
+        <div class="line"></div>
+
+        <h3 class="title">White Street T-Shirt</h3>
+
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <p class="price">$49.99</p>
+
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-left">
+        <img src="./assets/img/Logo 1.png" class="footer-logo" />
+
+        <p class="footer-desc">
+          Where the Darkside becomes your strongest <br />
+          With refined style. Without unnecessary noise.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <div class="newsletter">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

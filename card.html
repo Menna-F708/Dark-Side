@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Home Button -->
+    <a href="./index.html" class="home-btn">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="product-container">
+      <!-- Product Card -->
+      <div class="card">
+        <div class="image-section">
+          <img id="productImage" src="" alt="Product Image" />
+          <!-- <span class="limited">LIMITED</span> -->
+          <div class="wishlist"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <div class="info-section">
+          <h2 class="product-name">White Hoodie</h2>
+          <p class="price">$89.00</p>
+
+          <div class="colors">
+            <p>Colors:</p>
+            <div class="color-circle" style="background: black"></div>
+            <div
+              class="color-circle"
+              style="background: white; border: 1px solid black"
+            ></div>
+          </div>
+
+          <div class="sizes">
+            <p>Sizes:</p>
+            <div class="size">S</div>
+            <div class="size">M</div>
+            <div class="size">L</div>
+            <div class="size">XL</div>
+            <div class="size">XXL</div>
+          </div>
+
+          <button class="add-btn">Add To Cart</button>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="summary-item">
+          <h3 onclick="toggleSection('details')">
+            Product Details
+            <span class="toggle-icon">+</span>
+          </h3>
+          <div id="details" class="summary-content p-d">
+            Premium cotton hoodie with a relaxed fit. Designed for everyday
+            comfort and modern street style.
+          </div>
+        </div>
+
+        <div class="summary-separator"></div>
+
+        <div class="summary-item">
+          <h3 onclick="toggleSection('sizechart')">
+            Size Chart
+            <span class="toggle-icon">+</span>
+          </h3>
+          <div id="sizechart" class="summary-content">
+            <img src="./assets/img/download.png" />
+          </div>
+        </div>
+        <div class="summary-separator"></div>
+
+        <div class="summary-item">
+          <h3 onclick="toggleSection('policies')">
+            Policies
+            <span class="toggle-icon">+</span>
+          </h3>
+          <div id="policies" class="summary-content">
+            No exchange or return is allowed after the courier leaves.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const img = params.get("img");
+      if (img) {
+        document.getElementById("productImage").src = img;
+      }
+
+      function toggleSection(id) {
+        const el = document.getElementById(id);
+        el.style.display = el.style.display === "block" ? "none" : "block";
+
+        const h3 = el.previousElementSibling;
+        h3.classList.toggle("active");
+      }
+
+      document.getElementById("details").style.display = "block";
+      document
+        .querySelector("#details")
+        .previousElementSibling.classList.add("active");
+
+      const colors = document.querySelectorAll(".color-circle");
+      colors.forEach((color) => {
+        color.addEventListener("click", (e) => {
+          e.stopPropagation();
+          colors.forEach((c) => c.classList.remove("selected"));
+          color.classList.add("selected");
+        });
+      });
+
+      const sizes = document.querySelectorAll(".size");
+      sizes.forEach((size) => {
+        size.addEventListener("click", (e) => {
+          e.stopPropagation();
+          sizes.forEach((s) => s.classList.remove("selected"));
+          size.classList.add("selected");
+        });
+      });
+
+      document.addEventListener("click", () => {
+        colors.forEach((c) => c.classList.remove("selected"));
+        sizes.forEach((s) => s.classList.remove("selected"));
+      });
+
+      const wishlistBtn = document.querySelector(".wishlist");
+      wishlistBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        wishlistBtn.classList.toggle("active");
+      });
+
+      const summaries = document.querySelectorAll(".summary-item h3");
+      summaries.forEach((summary) => {
+        summary.addEventListener("click", (e) => {
+          e.stopPropagation();
+          summary.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
+ 
