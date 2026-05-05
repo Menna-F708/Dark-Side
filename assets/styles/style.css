@@ -137,13 +137,13 @@ body {
 /* ========== SITE SECTION ========== */
 .site {
   position: relative;
-  min-height: 50vh; 
+  min-height: 50vh;
   background: #000;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 100px 0 60px;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  align-items:  center  ;
+  align-items: center;
   flex-direction: row;
 }
 .video-section {
@@ -162,12 +162,12 @@ body {
 /* ===== PRODUCT CARD ===== */
 .product-card {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
   width: 280px;
   background: transparent;
   text-align: center;
   color: #fff;
-} 
+}
 
 /* IMAGE FLOAT ANIMATION */
 .img-wrapper {
@@ -250,6 +250,13 @@ body {
 
   .img-wrapper img {
     width: 100%;
+  }
+  .site {
+    padding: 100px 0 60px;
+  }
+  .title {
+    font-size: 13px;
+    display: inline-block;
   }
 }
 /* ========== FOOTER ========== */
