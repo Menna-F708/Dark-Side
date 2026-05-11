@@ -36,13 +36,16 @@ body {
   position: absolute;
   bottom: 20%;
   padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   border: none;
   border-radius: 8px;
   background: none;
   cursor: pointer;
   opacity: 0.8;
   z-index: 10000;
+  color: white;
+  letter-spacing: 1.2px;
 }
 
 /* ========== NAVBAR MOBILE ========== */
@@ -146,18 +149,6 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.video-section {
-  width: 100%;
-  overflow: hidden;
-  background: black;
-}
-
-.video-section video {
-  width: 100%;
-  height: 60%;
-  object-fit: cover;
-  display: block;
-}
 
 /* ===== PRODUCT CARD ===== */
 .product-card {
@@ -199,25 +190,11 @@ body {
   }
 }
 
-/* LINE UNDER IMAGE */
-.line {
-  width: 100%;
-  max-width: fit-content;
-  margin: 10px auto;
-  height: 1px;
-  background: #fff;
-}
 /* TITLE */
 .title {
   font-size: 13px;
   margin-bottom: 10px;
   display: inline-block;
-}
-
-/* RATING */
-.rating {
-  color: #ffcc00;
-  margin-bottom: 10px;
 }
 
 /* PRICE */
@@ -242,23 +219,6 @@ body {
   color: #000;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .img-wrapper {
-    height: 170px;
-  }
-
-  .img-wrapper img {
-    width: 100%;
-  }
-  .site {
-    padding: 100px 0 60px;
-  }
-  .title {
-    font-size: 13px;
-    display: inline-block;
-  }
-}
 /* ========== FOOTER ========== */
 .footer {
   background: #000;
@@ -340,6 +300,49 @@ body {
 
 .footer-center ul li {
   list-style: none;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .img-wrapper {
+    height: 300px;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: 250px;
+  }
+  .site {
+    padding: 10px 0 60px;
+  }
+  .title {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .top-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-row img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .bottom-row img {
+    width: 100%;
+  }
+
+  .top-row .img-2 {
+    width: 240px;
+    height: 246px;
+    padding: 0 0.6rem 0 0;
+  }
+
+  .bottom-row{
+    position: relative;
+    bottom: 2.5rem;
+    z-index: -2;
+  }
 }
 
 /*DESKTOP */

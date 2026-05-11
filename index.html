@@ -1,168 +1,157 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Side</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Side</title>
 
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC&display=swap");
-    </style>
-  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC&display=swap");
+  </style>
+</head>
 
-  <body>
-    <!-- ================= INTRO ================= -->
-    <section class="intro">
-      <video id="introVideo" muted playsinline>
-        <source
-          src="./assets/video/video_2026-02-10_23-58-07.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <button id="playVideoBtn">Explore Now</button>
-    </section>
+<body>
+ 
+<!-- ================= INTRO ================= -->
+<section class="intro">
+  <video id="introVideo" muted playsinline>
+    <source src="./assets/video/new.mp4" type="video/mp4"/>
+  </video>
+  <button id="playVideoBtn">TAKE OVER </button>
+</section>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-      <div class="nav-container">
-        <!-- Left (Mobile: cart) -->
-        <div class="left-icons">
-          <div class="cart">
-            <img src="./assets/img/shopping-bag (1).png" alt="cart" />
-            <span class="cart-count">0</span>
-          </div>
-        </div>
+<!-- ================= NAVBAR MOBILE ================= -->
+<header class="navbar">
+  <div class="nav-container">
 
-        <!-- Logo (center on mobile) -->
-        <div class="logo">
-          <img src="./assets/img/Logo 1.png" alt="logo" />
-        </div>
-
-        <!-- Right icons -->
-        <div class="right-icons">
-          <i class="fa-solid fa-magnifying-glass icon"></i>
-          <i class="fa-solid fa-bars icon" id="menuToggle"></i>
-        </div>
+    <div class="left-icons">
+      <div class="cart">
+        <img src="./assets/img/shopping-bag (1).png" alt="cart"/>
+        <span class="cart-count">0</span>
       </div>
+    </div>
 
-      <!-- Nav Links -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
+    <div class="logo">
+      <img src="./assets/img/Logo 1.png" alt="logo"/>
+    </div>
 
-    <!-- ================= DESKTOP NAVBAR ================= -->
-    <header class="desktop-navbar">
-      <div class="desktop-logo">
-        <img src="./assets/img/Logo 1.png" alt="logo" />
-      </div>
+    <div class="right-icons">
+      <i class="fa-solid fa-magnifying-glass icon"></i>
+      <i class="fa-solid fa-bars icon" id="menuToggle"></i>
+    </div>
 
-      <ul class="desktop-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  </div>
 
-      <div class="desktop-icons">
-        <i class="fa-solid fa-magnifying-glass icon"></i>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</header>
 
-        <div class="cart">
-          <img src="./assets/img/shopping-bag (1).png" />
-          <span class="cart-count">0</span>
-        </div>
-      </div>
-    </header>
+<!-- ================= DESKTOP NAV ================= -->
+<header class="desktop-navbar">
+  <div class="desktop-logo">
+    <img src="./assets/img/Logo 1.png" alt="logo"/>
+  </div>
 
-    <section class="video-section">
-      <video autoplay muted loop playsinline>
-        <source
-          src="./assets/video/ttttttttttttttttttttt_3_2.mp4"
-          type="video/mp4"
-        />
-      </video>
-    </section>
+  <ul class="desktop-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 
-    <!-- ================= PRODUCT SECTION ================= -->
-    <section class="site" id="site">
-      <div class="product-card">
-        <div class="img-wrapper">
-          <img
-            src="./assets/img/photo_2026-05-05_16-13-19-removebg-preview.png"
-            alt="product"
-          />
-        </div>
+  <div class="desktop-icons">
+    <i class="fa-solid fa-magnifying-glass icon"></i>
 
-        <div class="line"></div>
+    <div class="cart">
+      <img src="./assets/img/shopping-bag (1).png"/>
+      <span class="cart-count">0</span>
+    </div>
+  </div>
+</header>
 
-        <h3 class="title">Black Street T-Shirt</h3>
+<!-- ================= MEDIA GRID ================= -->
+<section class="media-grid">
 
-        <p class="price">$ 49.99</p> 
+  <div class="top-row"> 
+    <img class="img-2"  src="./assets/img/photo_2026-05-05_21-04-04.jpg" alt="">
+    <img  src="./assets/img/photo_2026-05-05_21-04-10.jpg" alt="">
+  </div>
 
-        <button class="buy-btn">Buy Now</button>
-      </div> 
+  <div class="bottom-row">
+    <img src="./assets/img/photo_٢٠٢٦-٠٥-٠٥_١٩-٣٤-٥٥.jpg" alt="">
+  </div>
 
-      <div class="product-card">
-        <div class="img-wrapper">
-          <img
-            src="./assets/img/photo_2026-05-05_16-08-19-removebg-preview.png"
-            alt="product"
-          />
-        </div>
+</section>
 
-        <div class="line"></div>
+<!-- ================= PRODUCT ================= -->
+<section class="site" id="site">
 
-        <h3 class="title">White Street T-Shirt</h3>
-        <p class="price">$ 49.99</p>
+  <div class="product-card">
+    <div class="img-wrapper">
+      <img src="./assets/img/photo_2026-05-05_16-13-19-removebg-preview.png"/>
+    </div>
+    <div class="line"></div> 
+    <h3 class="title">Black Street T-Shirt</h3>
+    <p class="price">$ 49.99</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
 
-        <button class="buy-btn">Buy Now</button>
-      </div>
-    </section>
+  <div class="product-card">
+    <div class="img-wrapper">
+      <img src="./assets/img/photo_2026-05-05_16-08-19-removebg-preview.png"/>
+    </div>
+    <div class="line"></div>
+    <h3 class="title">White Street T-Shirt</h3>
+    <p class="price">$ 49.99</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-      <div class="footer-left">
-        <img src="./assets/img/Logo 1.png" class="footer-logo" />
+</section>
 
-        <p class="footer-desc">
-          Where the Darkside becomes your strongest <br />
-          With refined style. Without unnecessary noise.
-        </p>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
 
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
+  <div class="footer-left">
+    <img src="./assets/img/Logo 1.png" class="footer-logo"/>
 
-      <div class="footer-center">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
+    <p class="footer-desc">
+      Where the Darkside becomes your strongest <br/>
+      With refined style. Without unnecessary noise.
+    </p>
 
-      <div class="footer-right">
-        <div class="newsletter">
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
-        </div>
-      </div>
-    </footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
 
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <div class="footer-center">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-right">
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email"/>
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
 </html>
