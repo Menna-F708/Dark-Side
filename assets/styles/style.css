@@ -9,7 +9,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #000;
   color: #eee;
-  overflow-x: hidden;
   padding-top: 70px;
 }
 
@@ -323,10 +322,7 @@ body {
     justify-content: center;
   }
 
-  .top-row img {
-    width: 250px;
-    height: 250px;
-  }
+ 
 
   .bottom-row img {
     width: 100%;
@@ -338,6 +334,10 @@ body {
     padding: 0 0.6rem 0 0;
   }
 
+  .top-row .img-1{
+      width: 244px;
+    height: 246px;
+  }
   .bottom-row{
     position: relative;
     bottom: 2.5rem;
