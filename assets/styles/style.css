@@ -229,10 +229,10 @@ body {
 .bottom-row img {
   width: 100%;
   height: 260px;
-  object-fit: contain ;
+  object-fit: contain;
   display: block;
 }
- 
+
 /* TITLE */
 .title {
   font-size: 13px;
@@ -418,10 +418,35 @@ body {
     text-align: center;
   }
 
+  .top-row .img-2 {
+    height: 450px;
+  }
+
+  .top-row .img-1 {
+    height: 450px;
+  }
+
+  .bottom-row img {
+    height: 500px;
+  }
+
   .footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .site {
+    min-height: 70vh;
+    justify-content: flex-start;
+  }
+
+  .product-card {
+    width: 280px;
+  }
+
+  .img-wrapper {
+    height: 300px;
   }
 
   .footer-left,
